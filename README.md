@@ -1,7 +1,8 @@
 # SPOPSM 
 
-Using classic app-principal see 
-[Classic App Principal Guide](Classic-App-Principal.md)
+Use the classic app-principal, created using /_layouts/15/AppRegNew.aspx and AppInv.aspx 
+to bypasses MFA and throttling. ACS-based auth will be deprecated by April 2026. 
+see my [Classic App Principal Guide](Classic-App-Principal.md)
 
 ![release](https://img.shields.io/badge/release-v1.0.0-blue.svg)
 ![status](https://img.shields.io/badge/status-stable-green.svg)
