@@ -1,8 +1,7 @@
 # SPOPSM 
 
 Use the classic app-principal, created using /_layouts/15/AppRegNew.aspx and AppInv.aspx to bypasses MFA and throttling. 
-ACS-based auth will be deprecated by April 2026. 
-see my [Classic App Principal Guide](Classic-App-Principal.md)
+ACS-based auth will be deprecated by April 2026. See my [Classic App Principal Guide](Classic-App-Principal.md)
 
 ![release](https://img.shields.io/badge/release-v1.0.0-blue.svg)
 ![status](https://img.shields.io/badge/status-stable-green.svg)
@@ -14,19 +13,15 @@ SPOPSM is a little script utility to simplify the process of migrating local fil
 
 Finally an easy and open source solution aimed to simplify long and tedious migration jobs to SharePoint Online!
 
-
-
 ## Using the Script 
 
 Simply call the script by passing your user name, a valid tenant url to SPO, point to a valid .csv files containing the source for the migration and hit enter!
-
 
 **`.\SPOPSM.ps1 -SiteUrl https://adventureworks.sharepoint.com/sites/apac -CSVFile .\finance.csv`**
 
 The command above will produce the following output:
 
 ![SPOPSM](./readme/script-running.png)
-
 
 With the migration complete, a summary will be displayed:
 
