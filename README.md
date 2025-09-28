@@ -1,5 +1,8 @@
 # SPOPSM 
 
+Using classic app-principal see 
+[Classic App Principal Guide](Classic-App-Principal.md)
+
 ![release](https://img.shields.io/badge/release-v1.0.0-blue.svg)
 ![status](https://img.shields.io/badge/status-stable-green.svg)
 ![mit](https://img.shields.io/badge/license-MIT-blue.svg)
