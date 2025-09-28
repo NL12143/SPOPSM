@@ -6,6 +6,9 @@ A script-based tool for migrating content from local folders or network file sha
 ## 🔐 Using a Classic App-Only Principal (Unattended Mode)
 This method bypasses MFA and throttling, ideal for automation and high-volume migrations.
 
+App-only principals are not throttled like Graph-based service accounts—ideal for bulk ingestion.
+ACS-based auth will be deprecated by April 2026. Plan migration to Entra ID app registrations.
+
 ### 1. Register the App Principal per tenat 
 Navigate to: https://<tenant>.sharepoint.com/sites/<site>/_layouts/15/AppRegNew.aspx
 
@@ -57,8 +60,13 @@ Each row defines a source folder and its SharePoint destination.
 2) SharePointPnPPowerShell*  - https://github.com/SharePoint/PnP-PowerShell 
 3) PSAlphaFS - https://github.com/v2kiran/PSAlphaFS Enable long path support (up to ~32,000 characters)
 
-🛠️ Notes
+🛠️ Note
+These modules are not compatible with PowerShell 7+, so launching v5.1 ensures full compatibility.
+Check with $PSVersionTable.PSVersion
+
+🛠️ Note
 This script is monolithic. Consider modularizing into functions for upload, metadata injection, and logging.
+
 App-only principals are not throttled like Graph-based service accounts—ideal for bulk ingestion.
 ACS-based auth will be deprecated by April 2026. Plan migration to Entra ID app registrations.
 
